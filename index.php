@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body style="background-image:url(<?= asset('images/unsplash.jpg') ?>)">
   <h1>Barebones</h1>
   <script src="<?= asset('scripts/main.js') ?>"></script>
 </body>

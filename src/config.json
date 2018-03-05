@@ -3,6 +3,9 @@
     "main": [
       "./scripts/main.js",
       "./styles/main.scss"
+    ],
+    "customizer": [
+      "./scripts/customizer.js"
     ]
   },
   "publicPath": "/dist",
@@ -10,6 +13,6 @@
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
-    "*.php"
+    "**/*.php"
   ]
 }
