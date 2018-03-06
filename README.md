@@ -34,3 +34,7 @@ To install third party libraries, use `yarn add {package name}`. You can include
 Use the ES6 syntax `import` to import libraries into your `main.js`.
 
 For more documentation, refer to [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme).
+
+## App
+
+The php involved is very minimal. You can repurpose or add to what's already there, which is just a simple include of a function that get's the manifest file - that way you can grab assets with the `asset()` function.
