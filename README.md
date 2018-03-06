@@ -3,28 +3,34 @@ Barebones starter template for static site integrations.
 
 ## Requirements
 - NodeJS must be installed.
-- Yarn globalley installed.
+- Yarn globally installed.
 - A PHP server.
 
 ## Installation
 - Clone the repo and run `yarn`
 - Run php server. Recommended `valet link`
-- Enter your site URL in `src/config.json`
+- Enter your site URL in `webpack.mix.js`
 
 ## watch
 
-This build provides you with a compiler that watches your files and serves up your domain on localhost with live reload enabled.
+This build provides you with a compiler that watches your files and serves up your domain on localhost with Browsersync enabled.
 
-- Run `yarn start` and open `http://localhost:3000`
+- Run `yarn watch` and open `http://localhost:3000`
 
 ## build
 
 When going live, building the project will compile and optimize all assets and put them in `/dist`.
 
-- Run `yarn build:production`
+Note: `/dist` isn't versioned. So to deploy you need two steps:
+1. `git pull`
+2. `yarn production`
+
+However, if you can't run yarn or npm on the production server, simply add `/dist` to versioning.
 
 ## Third Party Librairies
 
 To install third party libraries, use `yarn add {package name}`. You can include sass from `node_modules` with `~package/path.scss`.
 
-Use the ES6 syntax `import` to import libraries into your `main.js`. Or if you want another separate script file, add it to `src/config.json` entry in a new array.
+Use the ES6 syntax `import` to import libraries into your `main.js`.
+
+For more documentation, refer to [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme).
