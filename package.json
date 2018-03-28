@@ -30,14 +30,13 @@
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
     "copy-webpack-plugin": "^4.5.1",
+    "imagemin-webpack-plugin": "^2.1.0",
     "imagemin-mozjpeg": "^7.0.0",
     "laravel-mix": "^2.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "imagemin-webpack-plugin": "^2.1.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9",
-    "slick-carousel": "^1.8.1"
   }
 }
