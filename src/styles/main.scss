@@ -7,3 +7,15 @@
 @import "base";
 @import "layout";
 @import "blocks/blocks";
+
+nav {
+  display: block;
+
+  a {
+    display: inline-block;
+    padding: 1em 2em;
+    &.active {
+      color: teal;
+    }
+  }
+}

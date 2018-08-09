@@ -13,3 +13,18 @@ function asset( $path ) {
 
   return $root . $assets[$path];
 }
+
+function get_page() {
+  $req = trim($_SERVER['REQUEST_URI'], '/');
+  if( empty($req) )
+    $req = "index";
+
+  return $req;
+}
+
+function partial( $path ) {
+  $include = __DIR__ . '/../partials/' . trim($path) . '.php';
+  if( file_exists($include) ) {
+    include __DIR__ . '/../partials/' . trim($path) . '.php';
+  }
+}

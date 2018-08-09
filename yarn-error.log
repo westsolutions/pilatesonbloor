@@ -1,0 +1,72 @@
+Arguments: 
+  /Users/greg/.nvm/versions/node/v10.6.0/bin/node /Users/greg/.nvm/versions/node/v10.6.0/bin/yarn
+
+PATH: 
+  /usr/local/opt/icu4c/bin:/Users/greg/.nvm/versions/node/v10.6.0/bin:/usr/local/sbin:/Users/greg/bin:/usr/local/bin:/Users/greg/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/greg/code/projects/barebones/package.json: Unexpected token } in JSON at position 1442
+      at JSON.parse (<anonymous>)
+      at /Users/greg/.nvm/versions/node/v10.6.0/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/Users/greg/.nvm/versions/node/v10.6.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /Users/greg/.nvm/versions/node/v10.6.0/lib/node_modules/yarn/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "barebones",
+    "version": "1.0.0",
+    "author": "Greg <greg@codecomment.io>",
+    "homepage": "https://codecomment.io",
+    "private": true,
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/codecommet/barebones.git"
+    },
+    "bugs": {
+      "url": "https://github.com/codecomment/barebones/issues"
+    },
+    "licenses": [
+      {
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+      }
+    ],
+    "engines": {
+      "node": ">= 6.9.4"
+    },
+    "scripts": {
+      "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.23.6",
+      "browser-sync-webpack-plugin": "^2.0.1",
+      "copy-webpack-plugin": "^4.5.1",
+      "imagemin-webpack-plugin": "^2.1.0",
+      "imagemin-mozjpeg": "^7.0.0",
+      "laravel-mix": "^2.0.0"
+    },
+    "dependencies": {
+      "bootstrap": "^4.0.0",
+      "jquery": "^3.3.1",
+      "popper.js": "^1.12.9",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

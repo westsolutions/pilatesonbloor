@@ -1,23 +1,12 @@
-<?php require_once("app/init.php"); ?>
-<!doctype html>
+<?php
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+require_once __DIR__ . "/app/init.php";
 
-  <title>Barebones</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+  echo "Handle other requests.";
+}
 
-  <link rel="stylesheet" href="<?= asset('styles/main.css') ?>">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body style="background-image:url(<?= asset('images/unsplash.jpg') ?>)">
-  <h1>Barebones</h1>
-  <script src="<?= asset('scripts/main.js') ?>"></script>
-</body>
-</html>
+// GET REQUESTS
+$req = get_page();
+  
+include_once __DIR__ . "/pages/$req.php";
