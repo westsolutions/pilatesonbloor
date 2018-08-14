@@ -17,6 +17,11 @@ This build provides you with a compiler that watches your files and serves up yo
 
 - Run `yarn watch` and open `http://localhost:3000`
 
+## Dev / Structure
+- All sass files and assets should go under `./src`
+- There is some simple page routing under `./pages` with a `partial()` function to help grab common elements. Markup should be built under `/pages` and `/partials`
+- When assets are compiled, they become versioned under a mix-manifest.json file, so there's a `asset()` helper (seen in `/partials/head.php`) that you can use for any assets (images, css, js, etc).
+
 ## build
 
 When going live, building the project will compile and optimize all assets and put them in `/dist`.
