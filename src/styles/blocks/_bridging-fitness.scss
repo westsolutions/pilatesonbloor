@@ -1,0 +1,20 @@
+.wrapper-hero {
+	padding-top: 207px;
+	padding-bottom: 207px;
+	position: relative;
+	p {
+		max-width: 762px;
+		width: 100%;
+		display: inline-block;
+		font-size: 38px;
+	}
+}
+.bg-hero {
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 800px;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: 90px;
+}

@@ -36,7 +36,7 @@ mix.webpackConfig({
  |
  */
 
-mix.browserSync('barebones.test');
+mix.browserSync('pilatest.local');
 
 mix.js('src/scripts/main.js', 'dist/scripts/')
    .sass('src/styles/main.scss', 'dist/styles/')
