@@ -1,0 +1,45 @@
+.our-team-title {
+	h3 {
+		margin-top: 107px;
+		margin-bottom: 55px;
+	}
+	p {
+		font-size: 1.75rem;
+		line-height: 2.8125rem;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		em {
+			color: #862886;
+		}
+	}
+}
+
+.wrapper-our-team {
+	.team-img {
+		img {
+			height: 369px;
+			width: 369px;
+						-webkit-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
+			-moz-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
+			box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
+		}
+	}
+	.container-text {
+		h5 {
+			letter-spacing: 3.3px;
+			color: #862886;
+			font-size: 1.375rem;
+			line-height: 2.1875rem;
+			font-weight: 600px;
+		}
+		p {
+			color: #6e6e6e;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			strong {
+				color: #000;
+			}
+		}
+	}
+}

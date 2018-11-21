@@ -7,9 +7,11 @@
 @import "base";
 @import "layout";
 @import "blocks/blocks";
-@import "blocks/bridging-fitness";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/our-team";
 
-nav {
+/*nav {
   display: block;
 
   a {
@@ -19,4 +21,4 @@ nav {
       color: teal;
     }
   }
-}
+}*/

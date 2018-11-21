@@ -1,19 +1,23 @@
+.wrapper-what-is {
+	p {
+		color: #6e6e6e;
+		font-size: 1.375rem;
+		line-height: 2.5rem;
+		padding: 38px 40px;
+		border: 5px solid #fff;
+		margin-top: 67px;
+		margin-bottom: 64px;
+		em {
+			color: #000;
+		}
+	}
+}
+
+
 .wrapper-exercises {
 	img {
 		width: 301px;
 		height: 301px;
-	}
-}
-
-.wrapper-our-team {
-	.container-img {
-		img {
-			height: 369px;
-			width: 369px;
-						-webkit-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
-			-moz-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
-			box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
-		}
 	}
 }
 
@@ -25,3 +29,23 @@
 		}
 	}
 }
+
+.wrapper-exercises {
+	h4 {
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
+	.wrapper-img {
+		margin-top: 28px;
+	}
+	p {
+		font-size: 1.375rem;
+		line-height: 2.3125rem;
+		letter-spacing: 3.3px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+

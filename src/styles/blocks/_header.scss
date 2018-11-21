@@ -1,0 +1,43 @@
+header {
+	.btn {
+		margin-left: 9px;
+	}
+}
+.disabled-scrolling {
+	overflow: hidden !important;
+}
+.fa-bars {
+	display: none;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+}
+
+.navbar-nav {
+		display: flex;
+	}
+
+@include media-breakpoint-down(md) {
+	.fa-bars {
+		display: block;
+	}
+	.navbar-nav {
+		display: none;
+	}
+	.js--nav {
+		height: 100%;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 1070;
+	    top: 0;
+	    left: 0;
+	    background-color: rgba(255, 255, 255, 0.85);
+	    overflow-y: auto;
+	    -webkit-transition: .5s;
+	    transition: .5s;
+	    display: block;
+	    text-align: center;
+	    font-size: 3rem;
+	    padding-top: 150px;
+	}
+}

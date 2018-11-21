@@ -10457,8 +10457,15 @@ window.$ = window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 
 
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
-  var title = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("title").text();
-  console.log(title + " is ready.");
+    var title = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("title").text();
+    console.log(title + " is ready.");
+});
+
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js--toggle-menu').click(function () {
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".navbar-nav").addClass("js--nav");
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('body').toggleClass('disabled-scrolling');
+    });
 });
 
 /***/ }),

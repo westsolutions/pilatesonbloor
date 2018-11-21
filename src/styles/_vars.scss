@@ -1,4 +1,27 @@
-$body-bg: white;
-$body-color: white;
+$primary-color: #000;
+$secondary-color:#862886;
 
-$link: black;
+// bootstrap 
+$body-bg: #ffff;
+$body-color: $primary-color;
+$font-family-base: 'Raleway', sans-serif;
+$warning: $secondary-color;
+$border-radius: 0;
+$btn-font-weight:600;
+$primary:$secondary-color;
+$secondary:$primary-color;
+
+
+
+
+
+
+$font-color: #000;
+
+
+
+$font-size-small:12px;
+
+
+$font-family-base: 'Raleway', sans-serif;
+$font-family-primary: 'Raleway', sans-serif;

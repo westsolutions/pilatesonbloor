@@ -2,11 +2,13 @@
 	padding-top: 207px;
 	padding-bottom: 207px;
 	position: relative;
-	p {
-		max-width: 762px;
+	h2 {
 		width: 100%;
-		display: inline-block;
-		font-size: 38px;
+		display: block;
+		margin-bottom: 60px;
+		em {
+			color: $secondary-color;
+		}
 	}
 }
 .bg-hero {
