@@ -6,7 +6,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg d-flex justify-content-between">
 				<a class="navbar-brand" href="/"><img src="<?= asset('images/logo.svg') ?>" alt=""></a>
-				<i class="fas fa-bars js--toggle-menu"></i>
+				<i class="fa fa-bars js--toggle-menu"></i>
 			    <ul class="navbar-nav">
 			    	<li class="nav-item">
 			        	<a class="nav-link" href="#what-is-pilates">What is pilates?</a>
