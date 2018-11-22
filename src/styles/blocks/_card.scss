@@ -1,0 +1,22 @@
+.wrapper-card {
+	.classes-title {
+		max-width: 969px;
+		width: 100%;
+		margin: 0 auto;
+		p {
+			font-size: 1.75rem;
+			line-height: 2.8125rem;
+			margin-top: 55px;
+			margin-bottom: 72px;
+			em {
+				color: $secondary-color;
+			}
+		}
+	}
+	/*.classes-items {
+		img {
+			height: 369px;
+			width: 369px;
+		}
+	}*/
+}

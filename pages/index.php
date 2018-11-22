@@ -82,17 +82,17 @@
 			</div>
 			<div class="our-team-people">
 				<div class="our-team-left d-flex">
-					<div class="team-img">
+					<div class="team-img d-flex">
 						<img src="<?= asset('images/sarah-koekkoek.png') ?>" alt="">
 					</div>
-					<div class="container-text d-flex flex-column text-left justify-content-end">
+					<div class="container-text text-left ">
 						<h5>Sarah Koekkoek</h5>
 						<p>Sarah Koekkoek is an independent dance artist, educator and choreographer. She was born in Burlington, Ontario and trained in the Professional Division at Canada’s Royal Winnipeg Ballet School. She has danced with The Washington Ballet, Canada’s Ballet Jorgen, Les Grands Ballets Canadiens, The Royal Winnipeg Ballet and The Chimera Project as well as participating in several dance residencies at The Banff Centre for the Arts. 
 						Sarah has been practicing Pilates since 2007 and in 2012 became a Licensed Provider of the <strong>Fletchers Pilates</strong> Method. Sarah continues her Pilates and Movement education through courses and workshops and in January 2019 will begin a three part Movement for Trauma certification with Jane Clapp. </p>
 					</div>
 				</div>
 				<div class="our-team-right d-flex">
-					<div class="container-text d-flex flex-column text-right justify-content-center">
+					<div class="container-text d-flex flex-column text-right justify-content-center ">
 						<h5>Deanna Villa</h5>
 						<p>Deanna has been practicing Pilates, Yoga, Thai Massage and meditation since 1998.  Her passion and expertise of movement, stillness, strengthening and lengthening have organically spawned, merged and blossomed beautifully by these movement healing modalities.</p>
 						<p><strong>Pilates Mat Certified</strong> — Holistic Bodyworx Trained <strong>Reformer 1 & 2 and ISP</strong> — Injuries & Special Populations: STOTT PilatesTrained</p>
@@ -115,9 +115,9 @@
 	</section>
 	
 	
-	<section class="wrapper-classes">
+	<section class="wrapper-card">
 		<div class="container">
-			<div class="container-classes-text text-center">
+			<div class="classes-title text-center">
 				<h3 id="classes">Classes</h3>
 				<p>Our classes ensure that your <strong><em>performance goals</em></strong> are met in a <strong><em>peaceful</em></strong> and <strong><em>grounded</em></strong> environment. Stable, methodical and focused to dynamic and precise active flow.</p>
 			</div>

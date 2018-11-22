@@ -1,7 +1,11 @@
 .our-team-title {
+	margin-bottom: 35px;
 	h3 {
-		margin-top: 107px;
 		margin-bottom: 55px;
+
+		@include media-breakpoint-down(lg) { 
+			margin-bottom: 35px;
+		}
 	}
 	p {
 		font-size: 1.75rem;
@@ -10,36 +14,133 @@
 		width: 100%;
 		margin: 0 auto;
 		em {
-			color: #862886;
+			color: $secondary-color;
 		}
 	}
 }
 
 .wrapper-our-team {
+	margin-top: 107px;
 	.team-img {
+		position: relative;
+		max-height: 381px;
+		width: 38%;
+		@include media-breakpoint-down(lg) {
+			width: 44%;
+		}
 		img {
-			height: 369px;
-			width: 369px;
-						-webkit-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
-			-moz-box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
-			box-shadow: 12px 12px 0px 12px rgba(134,40,134,1);
+			max-height: 369px;
+			max-width: 369px;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			z-index: 100;
+		}
+		&:after {
+			content: ' ';
+			max-height: 381px;
+			max-width: 381px;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: $secondary-color;
+			position: absolute;
+			top: 0;
 		}
 	}
 	.container-text {
+		padding-left: 3px;
+		width: 62%;
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-down(lg) {
+			width: 56%;
+		}
 		h5 {
 			letter-spacing: 3.3px;
-			color: #862886;
+			color: $secondary-color;
 			font-size: 1.375rem;
 			line-height: 2.1875rem;
 			font-weight: 600px;
+			margin-bottom: 15px;
+			text-transform: uppercase;
 		}
 		p {
 			color: #6e6e6e;
 			font-size: 1.125rem;
 			line-height: 1.75rem;
 			strong {
-				color: #000;
+				color: $primary-color;
 			}
+		}
+	}
+
+	.our-team-left { 
+		margin-bottom: 45px;
+		.team-img {
+			img {
+				left: 0;
+			}
+			&:after {
+				content: ' ';
+				left: 0;
+			}
+		}
+		.container-text { 
+			padding-top: 150px;
+		}
+	}
+	.our-team-right {
+		.team-img {
+			height: 381px;
+			img {
+				right: 0;
+			}
+			&:after {
+				content: ' ';
+				right: 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.wrapper-our-team { 
+		margin-top: 50px;
+		.our-team-left {
+			flex-direction: column;
+			margin-bottom: 30px;
+			.container-text {
+				padding-top: 30px;
+			}
+		}
+		.our-team-right {
+			flex-direction: column;
+			.container-text {
+				order: 2;
+			}
+			.team-img {
+				height: 312px;
+			}
+		}
+		.team-img {
+			width: 100%;
+			height: 312px;
+			img { 
+				max-height: 300px;
+    			max-width: 300px;
+			}
+		    &:after {
+				content: ' ';
+				max-height: 312px;
+				max-width: 312px;
+			}
+		}
+		.container-text {
+			width: 100%;
+			padding-top: 30px;
 		}
 	}
 }
