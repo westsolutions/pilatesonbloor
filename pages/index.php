@@ -6,7 +6,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg d-flex justify-content-between">
 				<a class="navbar-brand" href="/"><img src="<?= asset('images/logo.svg') ?>" alt=""></a>
-				<i class="fas fa-bars js--toggle-menu"></i>
+				<i class="fa fa-bars js--toggle-menu"></i>
 			    <ul class="navbar-nav">
 			    	<li class="nav-item">
 			        	<a class="nav-link" href="#what-is-pilates">What is pilates?</a>
@@ -20,7 +20,7 @@
 			        <li class="nav-item">
 			        	<a class="nav-link" href="#contact">Contact</a>				        
 			        </li>
-			        <button class="btn btn-sm btn-outline-primary" type="button">Register</button>
+			        <button class="btn btn-sm 	" type="button">Register</button>
 			    </ul>
 			</nav>
 		</div>
@@ -37,9 +37,9 @@
 	</section>
 
 	
-	<section class="wrapper-what-is">
+	<section id="what-is-pilates" class="wrapper-what-is">
 		<div class="container text-center">
-			<h3 id="what-is-pilates">What is pilates?</h3>
+			<h3>What is pilates?</h3>
 			<p><strong><em>Pilates</em></strong> is an intelligent, full body exercise and conditioning system based on modern methodology moving forward the original foundation of the rehabilitative Pilates method. <strong><em>Mindful movements</em></strong> linked with <strong><em>breath</em></strong> that develops deep core strength, flexibility, endurance and movement coordination. The classic Pilates method is <strong><em>low-impact</em></strong>, <strong><em>diverse</em></strong>, <strong><em>stable</em></strong> and <strong><em>dynamic.</em></strong></p>
 		</div>
 	</section>
@@ -65,7 +65,7 @@
 				<div class="col-4">
 					<div class="wrapper-img">
 						<img src="<?= asset('images/c.png') ?>" alt="">
-						<p>Core strengthening &</br>Controlled flowing</br>movement</p>
+						<p>Core strengthening &<br>Controlled flowing</br>movement</p>
 					</div>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 	<section class="wrapper-our-team">
 		<div class="container">		
 			<div class="our-team-title text-center">
-				<h3 id="our-team">our team</h3>
+				<h3 id="our-team">Our team</h3>
 				<p>Our Pilates approach is <strong><em>safe</em></strong>, <strong><em>stable</em></strong> and <strong><em>functional</em></strong>, taught by experienced Instructor Trainers each with over <strong><em>2 decades</em></strong> of functional movement based practices.</p>
 			</div>
 			<div class="our-team-people">
@@ -249,7 +249,7 @@
 					    	</div>
 						</div>
 						<div class="form-group">
-					        <textarea class="form-control"" rows="3"></textarea>
+					        <textarea class="form-control" rows="3"></textarea>
 						</div>
 					  <button type="submit" class="btn btn-lg btn-primary">Learn more</button>
 					</form>
@@ -275,7 +275,6 @@
 			</div>
 		</div>
 	</footer>
-  <!--<?php partial('nav') ?>-->
   <script src="<?= asset('scripts/main.js') ?>"></script>
 </body>
 </html>
