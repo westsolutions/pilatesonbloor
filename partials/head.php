@@ -6,7 +6,7 @@
   <title>Barebones</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?= asset('styles/main.css') ?>">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700" rel="stylesheet">

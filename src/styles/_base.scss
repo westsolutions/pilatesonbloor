@@ -1,3 +1,10 @@
+.btn-primary {
+	&:hover {
+	    color: #fff;
+	    background-color: #a551a5;
+	    border-color: #a551a5;
+	}
+}
 body {
 	font-weight: 500;
 	border-top: 9px solid $secondary-color;

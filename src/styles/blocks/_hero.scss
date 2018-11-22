@@ -1,11 +1,24 @@
 .wrapper-hero {
-	padding-top: 207px;
-	padding-bottom: 207px;
-	position: relative;
+	overflow: hidden;
 	h2 {
+		max-width: 762px;
 		width: 100%;
 		display: block;
 		margin-bottom: 60px;
+		z-index: 101;
+		/*&:before {
+			content: " ";
+			background: url('../images/pilates.png') center center / contain;
+			background-repeat: no-repeat;
+			max-width: 670px;
+		    width: 100%;
+		    max-height: 640px;
+		    height: 100%;
+			position: absolute;
+			left: -150px;
+			top: -200px;
+			overflow: hidden;
+		}*/
 		em {
 			color: $secondary-color;
 		}
@@ -13,13 +26,47 @@
 }
 .bg-hero {
 	background-repeat: no-repeat;
-	width: 600px;
-	height: 700px;
+	max-width: 670px;
+    width: 100%;
+    max-height: 640px;
+    height: 100%;
 	background-size: contain;
 	position: absolute;
-	top: 90px;
-}
-
-@include media-breakpoint-down(lg) { 
+	top: 0;
+	left: -120px;
 	
+}
+.wrap-title-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative;
+	height: 780px;
+}
+@include media-breakpoint-down(lg) { 
+
+}
+@include media-breakpoint-down(md) { 
+	.wrapper-hero {
+		h2 {
+			margin-bottom: 30px;
+			font-size: 1.5rem;
+		}
+	}
+	.wrap-title-hero {
+		height:350px;
+	}
+	.bg-hero {
+		background-repeat: no-repeat;
+		max-width: 200px;
+	    width: 100%;
+	    max-height: 250px;
+	    height: 100%;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		left: 0px;
+		
+	}
 }

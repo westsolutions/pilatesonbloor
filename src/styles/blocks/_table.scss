@@ -1,0 +1,58 @@
+.wrapper-prising {
+	table {
+		span {
+			font-size: 0.9375rem;
+		}
+	}
+	thead {
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+
+	}
+	tr {
+		border-bottom: 0.5px solid #000;
+	}
+	th {
+		font-size: 1.375rem;
+		line-height: 2.1875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		background-color: $secondary-color;
+		color: #fff;
+		letter-spacing: 3.3px;
+	}
+	td {
+		font-size: 1.5rem;
+		line-height: 1.875rem;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		em {
+			font-size: 1.125rem;
+			font-weight: 700;
+		}
+	}
+	.border-r {
+		/*border-left: 0.5px dotted #000;
+		border-right: 0.5px dotted #000;*/
+
+		background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+		background-position: right;
+		background-size: 0.5px 3px;
+		background-repeat: repeat-y;
+
+	}
+	.border-bottom {
+		border-bottom: 8.5px solid $secondary-color!important;
+	}
+	.bg-gray {
+
+	}
+	p {
+		color: #6e6e6e;
+		font-size: 1.125rem;
+		line-height: 1.75rem
+		em {
+			font-weight: 600;
+		}
+	}
+}

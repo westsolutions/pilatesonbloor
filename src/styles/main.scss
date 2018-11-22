@@ -3,7 +3,7 @@
 
 // Vendors
 @import "~bootstrap/scss/bootstrap";
-
+@import "~font-awesome/scss/font-awesome";
 @import "base";
 @import "layout";
 @import "blocks/blocks";
@@ -12,6 +12,10 @@
 @import "blocks/our-team";
 @import "blocks/blockquote";
 @import "blocks/card";
+@import "blocks/abc";
+@import "blocks/table";
+@import "blocks/form";
+@import "blocks/footer";
 
 
 /*nav {

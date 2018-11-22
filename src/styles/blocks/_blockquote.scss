@@ -1,28 +1,29 @@
 .wrapper-blockquote {
-	margin-top: 93px;
-	margin-bottom: 266px;
+	padding-top: 93px;
+	margin-bottom: 260px;
+	overflow: hidden;
 	blockquote {
 		max-width: 1000px;
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
+		&:before, &:after {
+			content: " ";
+			height: 40px;
+			width: 60px;
+			position: absolute;
+		}
 		&:before {
 			content: " ";
-			background: url(../images/quotes-left.svg) center center / cover;
-			height: 50px;
-			width: 50px;
-			position: absolute;
-			top: 0;
-			left: 0;
+			background: url('../images/quotes-left.png') center center / cover;
+			top: -15px;
+			left: -85px;
 		}
 		&:after {
 			content: " ";
-			background-image: url('../images/quotes-right.svg');
-			height: 50px;
-			width: 50px;
-			position: absolute;
-			bottom: 0;
-			right: 0;
+			background: url('../images/quotes-right.png') center center / cover;
+			bottom: 80px;
+    		right: -85px;
 		}
 		p {
 			font-size: 1.75rem;
@@ -36,5 +37,13 @@
 			letter-spacing: 3.3px;
 			text-transform: uppercase;
 		}
+	}
+}
+
+@include media-breakpoint-down(lg) { 
+	.wrapper-blockquote {
+		padding-top: 43px;
+		margin-bottom: 100px;
+		overflow: hidden;
 	}
 }

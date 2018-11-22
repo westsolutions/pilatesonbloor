@@ -1,0 +1,14 @@
+footer {
+	background-color: $secondary-color;
+	padding-top: 35px;
+	padding-bottom: 23px;
+	span {
+		color: #fff;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		display: flex;
+	}
+	li{
+		display: inline-block;
+	}
+}

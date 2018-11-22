@@ -106,7 +106,7 @@
 	}
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
 	.wrapper-our-team { 
 		margin-top: 50px;
 		.our-team-left {
@@ -124,10 +124,16 @@
 			.team-img {
 				height: 312px;
 			}
+			p {
+				text-align: left;
+			}
 		}
 		.team-img {
-			width: 100%;
 			height: 312px;
+		    max-width: 312px;
+		    width: 100%;
+		    /* height: 100%; */
+		    margin: 0 auto;
 			img { 
 				max-height: 300px;
     			max-width: 300px;
@@ -141,6 +147,9 @@
 		.container-text {
 			width: 100%;
 			padding-top: 30px;
+			h5 {
+				text-align: center;
+			}
 		}
 	}
 }
