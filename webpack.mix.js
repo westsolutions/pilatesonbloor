@@ -40,6 +40,7 @@ mix.browserSync('pilatest.local');
 
 mix.js('src/scripts/main.js', 'dist/scripts/')
    .sass('src/styles/main.scss', 'dist/styles/')
+   .options({ processCssUrls: false })
    .setPublicPath('dist');
 
 
