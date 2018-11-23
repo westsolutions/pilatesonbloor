@@ -4,12 +4,10 @@
 		margin-bottom: 55px;
 
 		@include media-breakpoint-down(lg) { 
-			margin-bottom: 35px;
+			margin-bottom: 3rem;
 		}
 	}
-	p {
-		font-size: 1.75rem;
-		line-height: 2.8125rem;
+	h4 {
 		max-width: 800px;
 		width: 100%;
 		margin: 0 auto;
@@ -58,19 +56,11 @@
 		@include media-breakpoint-down(lg) {
 			width: 56%;
 		}
-		h5 {
-			letter-spacing: 3.3px;
-			color: $secondary-color;
-			font-size: 1.375rem;
-			line-height: 2.1875rem;
-			font-weight: 600px;
+		h6 {
 			margin-bottom: 15px;
-			text-transform: uppercase;
 		}
 		p {
 			color: #6e6e6e;
-			font-size: 1.125rem;
-			line-height: 1.75rem;
 			strong {
 				color: $primary-color;
 			}
@@ -108,7 +98,7 @@
 
 @include media-breakpoint-down(md) {
 	.wrapper-our-team { 
-		margin-top: 50px;
+		margin-top: 3.5rem;
 		.our-team-left {
 			flex-direction: column;
 			margin-bottom: 30px;

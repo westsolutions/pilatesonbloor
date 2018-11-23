@@ -8,9 +8,7 @@ header {
 }
 .fa-bars {
 	display: none;
-	width: 20px;
-	height: 20px;
-	background-color: red;
+	font-size: 1.5rem;
 }
 
 .navbar-nav {
@@ -19,10 +17,24 @@ header {
 			&:hover {
 				color: #a551a5;
 			}
+			&:active {
+				color: #a551a5;
+			}
+			&:focus {
+				color: #a551a5;
+			}
 		}
 	}
 
 @include media-breakpoint-down(md) {
+	header {
+		.navbar-brand {
+			width: 82%;
+			img {
+				width: 100%;
+			}
+		}
+	}
 	.fa-bars {
 		display: block;
 	}

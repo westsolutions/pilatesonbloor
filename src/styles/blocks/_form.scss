@@ -1,0 +1,38 @@
+.wrapper-form {
+	margin-top: 100px;
+	h6 {
+		margin-bottom: 1.2rem;
+	}
+	form {
+		textarea , input {
+			border-bottom: 1px solid #979797;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			background-color: initial;
+			color:#6e6e6e;
+		}
+		input {
+			padding: 0.3rem 0.75rem 0.3rem 0;
+			&:focus {
+			    color:#6e6e6e;
+			    background-color: initial;
+			    border-color: none;
+			    outline: 0;
+			    box-shadow: none;
+			}
+		}
+		textarea {
+		    height: calc(5.25rem + 2px);
+		    padding: 0.375rem 0.75rem 0.375rem 0;
+		    transition: none;
+		    &:focus {
+			    color: #6e6e6e;
+			    background-color: initial;
+			    border-color: none;
+			    outline: 0;
+			    box-shadow: none;
+			}
+		}
+	}
+}

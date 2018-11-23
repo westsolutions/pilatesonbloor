@@ -15,35 +15,29 @@
 		}
 		&:before {
 			content: " ";
-			background: url('../images/quotes-left.png') center center / cover;
+			background: url('../images/quote-l.svg') center center / cover;
 			top: -15px;
 			left: -85px;
 		}
 		&:after {
 			content: " ";
-			background: url('../images/quotes-right.png') center center / cover;
+			background: url('../images/quote-r.svg') center center / cover;
 			bottom: 80px;
     		right: -85px;
 		}
 		p {
-			font-size: 1.75rem;
-			line-height: 3.125rem;
 			margin-bottom: 25px;
-		}
-		footer {
-			color: $secondary-color;
-			font-size: 1.375rem;
-			line-height: 2.1875rem;
-			letter-spacing: 3.3px;
-			text-transform: uppercase;
+			color: #000;
+			line-height: 3.125rem;
+			font-size: 1.75rem;
 		}
 	}
 }
 
 @include media-breakpoint-down(lg) { 
 	.wrapper-blockquote {
-		padding-top: 43px;
-		margin-bottom: 100px;
+		padding-top: 3rem;
+		margin-bottom: 4rem;
 		overflow: hidden;
 	}
 }

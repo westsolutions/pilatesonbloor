@@ -4,6 +4,12 @@
 		width: 100%;
 		margin: 0 auto;
 		p {
+			@include media-breakpoint-down(md) { 
+				font-size: 1.075rem;
+				line-height: 1.8875rem;
+				margin-top: 3rem;
+				margin-bottom: 3.5rem;
+			}
 			font-size: 1.75rem;
 			line-height: 2.8125rem;
 			margin-top: 55px;
@@ -28,6 +34,10 @@
 			border-top-right-radius: 20px;
 		}
 		.card-title {
+			@include media-breakpoint-down(md) { 
+				font-size: 1.075rem;
+				line-height: 1.8875rem;
+			}
 			font-size: 1.375rem;
 			line-height: 2.1875rem;
 			letter-spacing: 3.3px;
@@ -47,17 +57,33 @@
 		    justify-content: space-between;
 
 		}
-		.card-text {
-			font-size: 1.125rem;
-			line-height: 1.75rem;
+		p {
 			color: #6e6e6e;
 			margin-bottom: 50px;
 		}
 	}
-	/*.classes-items {
-		img {
-			height: 369px;
-			width: 369px;
+}
+@include media-breakpoint-down(md) {
+	.wrapper-card {
+		.classes-title {
+			p {
+					font-size: 1.075rem;
+					line-height: 1.8875rem;
+					margin-top: 3rem;
+					margin-bottom: 3.5rem;
+			}
 		}
-	}*/
+		.card {
+			.card-title {
+					font-size: 1.075rem;
+					line-height: 1.8875rem;
+			}
+			.card-body {
+			    padding-top: 20px;
+			    padding-bottom: 30px;
+			    padding-left: 15px;
+			    padding-right: 15px;
+			}
+		}
+	}
 }
