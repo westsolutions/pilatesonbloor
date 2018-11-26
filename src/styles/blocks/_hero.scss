@@ -6,19 +6,7 @@
 		width: 100%;
 		display: block;
 		margin-bottom: 60px;
-		/*&:before {
-			content: " ";
-			background: url('../images/pilates.png') center center / contain;
-			background-repeat: no-repeat;
-			max-width: 670px;
-		    width: 100%;
-		    max-height: 640px;
-		    height: 100%;
-			position: absolute;
-			left: -150px;
-			top: -200px;
-			overflow: hidden;
-		}*/
+		z-index: 105;
 		em {
 			color: $secondary-color;
 		}
@@ -27,14 +15,7 @@
 .bg-hero {
 	position: absolute;
 	top: 0;
-	left: -120px;
-	/*img {
-		max-width: 670px;
-   		width: 100%;
-    	max-height: 640px;
-    	height: 100%;
-	}*/
-	
+	left: -120px;	
 }
 .wrap-title-hero {
 	display: flex;
@@ -42,20 +23,23 @@
 	align-items: flex-end;
 	justify-content: center;
 	position: relative;
-	height: 780px;
+	padding: 300px 0 219px 0;
+	/*height: 780px;*/
 }
 @include media-breakpoint-down(lg) { 
 
 }
 @include media-breakpoint-down(md) { 
 	.wrapper-hero {
+		margin-top: 85px;
 		margin-bottom: 3rem;
 		h2 {
 			margin-bottom: 30px;
 		}
 	}
 	.wrap-title-hero {
-		height:500px;
+		padding: 0;
+		/*height:500px;*/
 		text-align: center;
 		justify-content: flex-end;
 		.btn-lg {
@@ -63,26 +47,19 @@
 		}
 	}
 	.bg-hero {
-		position: absolute;
-		top: 85px;
-		left: 50%;
-		margin-bottom: 50px;
-		transform: translate(-50%);
+		position: static;
+		margin: 0 auto;
 		img {
-			/*max-width: 200px;
-	    	width: 100%;*/
 	   		max-height: 200px;
 		}
 	}
 }
 @include media-breakpoint-down(sm) { 
 	.wrap-title-hero {
-		height:720px;
+		/*height:720px;*/
 	}
 	.bg-hero {
 		img {
-			/*max-width: 200px;
-	    	width: 100%;*/
 	   		max-height: 250px;
 		}
 	}
