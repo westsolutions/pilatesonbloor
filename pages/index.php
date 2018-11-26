@@ -1,13 +1,19 @@
 <?php partial('head') ?>
 
 <body >
-	<div class="bg-top" style="background-image:url(<?= asset('images/image.svg') ?>)"></div>
+	
 	<header class="wrapper-header">
+		<div class="bg-top"></div>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg d-flex justify-content-between">
 				<a class="navbar-brand" href="/"><img src="<?= asset('images/logo.svg') ?>" alt="PILATES on BLOOR"></a>
-				<i class="fa fa-bars js--toggle-menu"></i>
-			    <ul class="navbar-nav">
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="btn-menu" for="hmt">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
+				</label>
+			    <ul class="navbar-nav hidden-menu">
 			    	<li class="nav-item">
 			        	<a class="nav-link" href="#what-is-pilates">What is pilates?</a>
 			    	</li>
@@ -26,12 +32,10 @@
 		</div>
 	</header> 
 	
-
-	
 	<section class="wrapper-hero text-right ">
 		<div class="container">
 			<div class="wrap-title-hero">
-				<div class="bg-hero"  style="background-image:url(<?= asset('images/pilates.png') ?>)"></div>
+				<div class="bg-hero"><img src="<?= asset('images/pilates.png') ?>" alt="PILATES"></div>
 			
 				<h2>Bridging <strong><em>fitness conditioning</em></strong>,<br/><strong><em>functional movement</em></strong> and <strong><em>rehabilitation<br/></em></strong>with professional <strong><em>client centered care</em></strong></h2>
 				<a class="btn btn-lg btn-outline-primary" href="/">Register today</a>
