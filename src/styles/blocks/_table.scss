@@ -32,6 +32,7 @@
 		line-height: 1.875rem;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		width: 275px;
 		em {
 			font-size: 1.125rem;
 			font-weight: 700;
@@ -76,5 +77,30 @@
 	h4 {
 		padding-top: 45px;
 		padding-bottom: 30px;
+	}
+}
+@include media-breakpoint-down(md) { 
+	.wrapper-prising {
+		th {
+			font-size: 1.075rem;
+			line-height: 1.475rem;
+			letter-spacing: 2.7px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		td {
+			font-size: 1.2rem;
+		    line-height: 1.575rem;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+			em {
+				font-size: 0.925rem;
+				font-weight: 700;
+			}
+		}
+		h4 {
+			padding-top: 35px;
+			padding-bottom: 20px;
+		}
 	}
 }

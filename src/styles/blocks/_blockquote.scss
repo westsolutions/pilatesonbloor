@@ -1,6 +1,5 @@
 .wrapper-blockquote {
 	padding-top: 93px;
-	margin-bottom: 260px;
 	overflow: hidden;
 	blockquote {
 		max-width: 1000px;
@@ -37,7 +36,12 @@
 @include media-breakpoint-down(lg) { 
 	.wrapper-blockquote {
 		padding-top: 3rem;
-		margin-bottom: 4rem;
 		overflow: hidden;
+		blockquote {
+			p {
+				line-height: 2.625rem;
+				font-size: 1.35rem;
+			}
+		}
 	}
 }

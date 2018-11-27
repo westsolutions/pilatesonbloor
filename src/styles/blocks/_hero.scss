@@ -24,17 +24,13 @@
 	justify-content: center;
 	position: relative;
 	padding: 300px 0 219px 0;
-	/*height: 780px;*/
 }
 @include media-breakpoint-down(lg) { 
-
-}
-@include media-breakpoint-down(md) { 
 	.wrapper-hero {
 		margin-top: 85px;
-		margin-bottom: 3rem;
 		h2 {
-			margin-bottom: 30px;
+			padding-bottom: 30px;
+			margin: 0 auto;
 		}
 	}
 	.wrap-title-hero {
@@ -54,10 +50,7 @@
 		}
 	}
 }
-@include media-breakpoint-down(sm) { 
-	.wrap-title-hero {
-		/*height:720px;*/
-	}
+@include media-breakpoint-down(sm) {
 	.bg-hero {
 		img {
 	   		max-height: 250px;

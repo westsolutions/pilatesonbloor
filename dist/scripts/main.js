@@ -10466,6 +10466,14 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
         __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".navbar-nav").addClass("js--nav");
         __WEBPACK_IMPORTED_MODULE_0_jquery___default()('body').toggleClass('disabled-scrolling');
     });
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js--toggle-close').click(function () {
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".navbar-nav").removeClass("js--nav");
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('body').toggleClass('disabled-scrolling');
+    });
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.nav-link').click(function () {
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".navbar-nav").removeClass("js--nav");
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('body').toggleClass('disabled-scrolling');
+    });
 });
 
 /***/ }),

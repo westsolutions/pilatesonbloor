@@ -7,13 +7,9 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg d-flex justify-content-between">
 				<a class="navbar-brand" href="/"><img src="<?= asset('images/logo.svg') ?>" alt="PILATES on BLOOR"></a>
-				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
-				<label class="btn-menu" for="hmt">
-					<span class="first"></span>
-					<span class="second"></span>
-					<span class="third"></span>
-				</label>
+				<i class="fa fa-bars js--toggle-menu" aria-hidden="true"></i>
 			    <ul class="navbar-nav hidden-menu">
+			    	<i class="fa fa-times js--toggle-close" aria-hidden="true"></i>
 			    	<li class="nav-item">
 			        	<a class="nav-link" href="#what-is-pilates">What is pilates?</a>
 			    	</li>
@@ -31,7 +27,7 @@
 			</nav>
 		</div>
 	</header> 
-	
+
 	<section class="wrapper-hero text-right ">
 		<div class="container">
 			<div class="wrap-title-hero">
@@ -42,7 +38,6 @@
 			</div>
 		</div>
 	</section>
-
 	
 	<section id="what-is-pilates" class="wrapper-what-is">
 		<div class="container text-center">
@@ -50,7 +45,6 @@
 			<p><strong><em>Pilates</em></strong> is an intelligent, full body exercise and conditioning system based on modern methodology moving forward the original foundation of the rehabilitative Pilates method. <strong><em>Mindful movements</em></strong> linked with <strong><em>breath</em></strong> that develops deep core strength, flexibility, endurance and movement coordination. The classic Pilates method is <strong><em>low-impact</em></strong>, <strong><em>diverse</em></strong>, <strong><em>stable</em></strong> and <strong><em>dynamic.</em></strong></p>
 		</div>
 	</section>
-
 	
 	<section class="wrapper-exercises text-center">
 		<div class="container">
@@ -79,7 +73,6 @@
 		</div>
 	</section>
 
-
 	<section class="wrapper-our-team" id="our-team">
 		<div class="container">		
 			<div class="our-team-title text-center">
@@ -91,7 +84,7 @@
 					<div class="team-img d-flex">
 						<img src="<?= asset('images/sarah-koekkoek.png') ?>" alt="Sarah Koekkoek">
 					</div>
-					<div class="container-text text-left ">
+					<div class="container-text d-flex flex-column text-left ">
 						<h6 >Sarah Koekkoek</h6>
 						<p>Sarah Koekkoek is an independent dance artist, educator and choreographer. She was born in Burlington, Ontario and trained in the Professional Division at Canada’s Royal Winnipeg Ballet School. She has danced with The Washington Ballet, Canada’s Ballet Jorgen, Les Grands Ballets Canadiens, The Royal Winnipeg Ballet and The Chimera Project as well as participating in several dance residencies at The Banff Centre for the Arts.</p>
 						<p>Sarah has been practicing Pilates since 2007 and in 2012 became a Licensed Provider of the <strong>Fletchers Pilates</strong> Method. Sarah continues her Pilates and Movement education through courses and workshops and in January 2019 will begin a three part Movement for Trauma certification with Jane Clapp. </p>
@@ -120,7 +113,6 @@
 		</div>
 	</section>
 	
-	
 	<section class="wrapper-card" id="classes">
 		<div class="container">
 			<div class="classes-title text-center">
@@ -131,9 +123,9 @@
 				<div class="col-12 col-md-4 text-center">
 					<div class="card">
 						<img class="card-img-top" src="<?= asset('images/istockphoto-846236610-1024x1024.jpg') ?>" alt="Card image cap">
-						<div class="card-body">
+						<div class="card-body d-flex  flex-column  align-items-center justify-content-between">
 							<div class="wrap-title-card">
-						    	<h5 class="card-title">Group</h5>
+						    	<h6 class="card-title">Group</h6>
 						    	<p class="card-text">Small classes for personal attention. Classes are built from core, foundation postures and exercise, then expands and layers for those intermediate dynamics which insures all fitness and health levels are met with profound results.</p>
 					    	</div>
 					    	<a href="/" class="btn btn-md btn-primary">Register</a>
@@ -143,9 +135,9 @@
 				<div class="col-12 col-md-4 text-center">
 					<div class="card"">
 						<img class="card-img-top" src="<?= asset('images/istockphoto-492158680-1024x1024.jpg') ?>" alt="Card image cap">
-						<div class="card-body">
+						<div class="card-body d-flex  flex-column  align-items-center justify-content-between">
 							<div class="wrap-title-card">
-						    	<h5 class="card-title">Privates</h5>
+						    	<h6 class="card-title">Privates</h6>
 						    	<p class="card-text">One on one training on the reformer or mat.  
 								Personal and focused specifically for you.</p>
 							</div>
@@ -157,9 +149,9 @@
 				<div class="col-12 col-md-4 text-center">
 					<div class="card"">
 						<img class="card-img-top" src="<?= asset('images/istockphoto-495506158-1024x1024.jpg') ?>" alt="Card image cap">
-						<div class="card-body">
+						<div class="card-body d-flex  flex-column  align-items-center justify-content-between">
 							<div class="wrap-title-card">
-						    	<h5 class="card-title">Semi-Privates</h5>
+						    	<h6 class="card-title">Semi-Privates</h6>
 						    	<p class="card-text">Two per training on the reformer or mat.
 								Bring a partner or friend and advance together.</p>
 							</div>
@@ -242,20 +234,20 @@
 	<section class="wrapper-form" id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-5">
+				<div class="col-12 col-md-5 col-xl-3">
 					<div class="wrap-contact">
 						<h6>Contact</h6>
 						<ul>
-							<li><p>664 Bloor St West , 2nd FL<br/>Toronto ON<br/>M6G 1L2</p></li>
-							<li><p><strong><em>Located inside Thai Massage Toronto Studio</em></strong></p></li>
-							<li><p>(416) 533 7419</p></li>
-							<li><p>info@pilatesonbloor.com</p></li>
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i><p>664 Bloor St West , 2nd FL<br/>Toronto ON<br/>M6G 1L2</p></li>
+							<li class="add-pad"><p><strong><em>Located inside Thai<br/>Massage Toronto Studio</em></strong></p></li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i><p>(416) 533 7419</p></li>
+							<li class="diffr-color"><i class="fa fa-envelope" aria-hidden="true"></i><p>info@pilatesonbloor.com</p></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-7 col-xl-5">
 					<h6>Questions?</h6>
-					<p>Fill in and submit the form and we will get back to you as quickly as possible</p>
+					<p class="form-title">Fill in and submit the form and we will get back to you as quickly as possible</p>
 					<form>
 						<div class="form-row">
 					    	<div class="form-group col-md-6">
@@ -271,22 +263,21 @@
 					  <button type="submit" class="btn btn-md btn-primary">Learn more</button> 
 					</form>
 				</div>
-				<div class="col-5">
-				</div>
 			</div>
 		</div>
 	</section>
+
 	<footer class="main-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-9">
+				<div class="col-12 col-lg-6 order-2 order-lg-1">
 					<span>&#169; 2018 Pilates on Bloor. All rights reserved</p></span>
 				</div>
-				<div class="col-3">
-					<ul>
-						<li>a</li>
-						<li>aa</li>
-						<li>aa</li>
+				<div class="col-12 col-lg-6 order-1 order-lg-2">
+					<ul class="social-link">
+						<li><a href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>

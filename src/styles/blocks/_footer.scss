@@ -1,14 +1,49 @@
 .main-footer {
 	background-color: $secondary-color;
-	padding-top: 35px;
-	padding-bottom: 23px;
+	span, .social-link {
+		padding-top: 35px;
+		padding-bottom: 23px;
+		line-height: 1.75rem;
+	}
 	span {
 		color: #fff;
 		font-size: 1.125rem;
-		line-height: 1.75rem;
 		display: flex;
+	}
+	.social-link {
+		text-align: right;
 	}
 	li{
 		display: inline-block;
+		margin-left: 30px;
+		
+	}
+	a {
+		&:hover {
+			.fa {
+				opacity: 0.6;
+			}
+		}
+	}
+	.fa {
+		font-size: 35px;
+		color: #fff;
+	}
+}
+
+@include media-breakpoint-down(md) { 
+	.main-footer {
+		span, .social-link {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		span {
+			justify-content: center;
+			order: 2;
+		}
+		.social-link {
+			text-align: center;
+			order: 1;
+		}
 	}
 }

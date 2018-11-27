@@ -14,4 +14,12 @@ $(document).ready(() => {
     	$( ".navbar-nav" ).addClass( "js--nav" );
         $('body').toggleClass('disabled-scrolling');
     });
+    $('.js--toggle-close').click(() => {
+    	$( ".navbar-nav" ).removeClass( "js--nav" );
+        $('body').toggleClass('disabled-scrolling');
+    });
+    $('.nav-link').click(() => {
+    	$( ".navbar-nav" ).removeClass( "js--nav" );
+        $('body').toggleClass('disabled-scrolling');
+    });
 });
