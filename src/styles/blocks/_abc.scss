@@ -13,11 +13,8 @@
 	}
 	.image-exercises {
 		position: absolute;
-	    top: 130px;
+	    bottom: 0;
 	    width: 100%;
-	    @include media-breakpoint-down(md) { 
-			top: 123px;
-	    }
 		img {
 			width: 100%;
 		}

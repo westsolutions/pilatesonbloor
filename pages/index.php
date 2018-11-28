@@ -46,7 +46,7 @@
 	</section>
 	
 	<section class="wrapper-exercises text-center">
-		<div class="image-exercises"><<img src="<?= asset('images/image-exercises.svg') ?>" alt="PILATES"></div>
+		<div class="image-exercises"><img src="<?= asset('images/image-exercises.svg') ?>" alt="PILATES"></div>
 		<div class="container">
 			<h4>Exercises are performed with an emphasis on these <strong><em>ABC</em></strong> precision techniques: </h4>
 			<div class="row">

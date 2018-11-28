@@ -12761,7 +12761,7 @@ html, body {
 
 .image-our-team:after {
   content: " ";
-  background: url("../images/image-our-team.svg") center center/cover;
+  background: url("../images/image-our-team.svg") center -5px/cover;
   position: absolute;
   background-repeat: no-repeat;
   width: 100%;
@@ -13344,14 +13344,8 @@ header .btn {
 
 .wrapper-exercises .image-exercises {
   position: absolute;
-  top: 130px;
+  bottom: 0;
   width: 100%;
-}
-
-@media (max-width: 991.98px) {
-  .wrapper-exercises .image-exercises {
-    top: 123px;
-  }
 }
 
 .wrapper-exercises .image-exercises img {
