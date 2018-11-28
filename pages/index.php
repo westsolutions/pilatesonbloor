@@ -74,6 +74,7 @@
 	</section>
 
 	<section class="wrapper-our-team" id="our-team">
+		<div class="our-bg-white"></div>
 		<div class="image-our-team"><!--<img src="<?= asset('images/image-our-team.svg') ?>" alt="PILATES">--></div>
 		<div class="container">		
 			<div class="our-team-title text-center">
@@ -106,6 +107,7 @@
 	</section>
 
 	<section class="wrapper-blockquote">
+		<div class="blockquote-bottom"><img src="<?= asset('images/blockquote-bottom.svg') ?>" alt="PILATES"></div>
 		<div class="container">
 			<blockquote class="text-center">
 				<p>&quot;I have always cherished my time on the mat. The Pilates reformer element has opened, enhanced and expanded the Pilates experience for me to new dimensions and depths, so much that we are honoured to be launching our boutique Pilates on Bloor studio, situated inside our Thai Massage Toronto studio, opening January 2, 2019, or earlier&quot;</p>
@@ -165,6 +167,7 @@
 	</section>
 
 	<section class="wrapper-prising">
+		<div class="pricing-top"><img src="<?= asset('images/pricing-top.svg') ?>" alt="PILATES"></div>
 		<div class="container text-center">
 			<h3>Pricing</h3>
 			<div class="table-responsive">
@@ -234,6 +237,7 @@
 	</section>
 
 	<section class="wrapper-form" id="contact">
+		<div class="map-form"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-5 col-xl-3">

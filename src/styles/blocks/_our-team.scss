@@ -16,6 +16,13 @@
 .wrapper-our-team {
 	padding-top: 107px;
 	position: relative;
+	.our-bg-white {
+		position: absolute;
+		bottom: 0;
+		height: 50px;
+		width: 100%;
+		background-color: #fff;
+	}
 	.container {
 		position: relative;
 	}

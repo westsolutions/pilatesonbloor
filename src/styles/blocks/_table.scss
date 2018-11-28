@@ -1,7 +1,9 @@
 .wrapper-prising {
+	position: relative;
+	background-color: #fff;
 	h3 {
 		margin-bottom: 65px;
-		padding-top: 200px;
+		padding-top: 50px;
 	}
 	table {
 		span {
@@ -53,7 +55,7 @@
 		border-bottom: 8.5px solid $secondary-color!important;
 	}
 	.bg-white {
-		background-color: #fff;
+		background-color: #f4f1fa;
 	}
 	.bg-int {
 		background-color: initial;
@@ -87,7 +89,7 @@
 	.wrapper-prising {
 		h3 {
 			margin-bottom: 3rem;
-			padding-top: 6rem;
+			padding-top: 3rem;
 		}
 		th {
 			font-size: 1.075rem;

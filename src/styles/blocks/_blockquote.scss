@@ -1,6 +1,8 @@
 .wrapper-blockquote {
 	padding-top: 93px;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	background-color: #fff;
+	position: relative;
 	blockquote {
 		max-width: 1000px;
 		width: 100%;
@@ -36,7 +38,7 @@
 @include media-breakpoint-down(lg) { 
 	.wrapper-blockquote {
 		padding-top: 3rem;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		blockquote {
 			max-width: 800px;
 			p {
@@ -49,7 +51,7 @@
 @include media-breakpoint-down(md) { 
 	.wrapper-blockquote {
 		padding-top: 3rem;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		blockquote {
 			max-width: 550px;
 			p {

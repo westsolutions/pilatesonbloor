@@ -12769,6 +12769,64 @@ html, body {
   background-size: cover;
 }
 
+.blockquote-bottom {
+  position: absolute;
+  bottom: -200px;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .blockquote-bottom {
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .blockquote-bottom {
+    bottom: -50px;
+  }
+}
+
+.blockquote-bottom img {
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 1199.98px) {
+  .blockquote-bottom img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .blockquote-bottom img {
+    height: 50px;
+  }
+}
+
+.pricing-top {
+  position: absolute;
+  top: -74px;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .pricing-top {
+    top: -34px;
+  }
+}
+
+.pricing-top img {
+  width: 100%;
+  height: 74px;
+}
+
+@media (max-width: 1199.98px) {
+  .pricing-top img {
+    height: 34px;
+  }
+}
+
 header {
   border-top: 9px solid #862886;
   padding-top: 60px;
@@ -12991,6 +13049,14 @@ header .btn {
   position: relative;
 }
 
+.wrapper-our-team .our-bg-white {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+}
+
 .wrapper-our-team .container {
   position: relative;
 }
@@ -13168,7 +13234,9 @@ header .btn {
 
 .wrapper-blockquote {
   padding-top: 93px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  background-color: #fff;
+  position: relative;
 }
 
 .wrapper-blockquote blockquote {
@@ -13209,7 +13277,7 @@ header .btn {
 @media (max-width: 1199.98px) {
   .wrapper-blockquote {
     padding-top: 3rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   .wrapper-blockquote blockquote {
     max-width: 800px;
@@ -13223,7 +13291,7 @@ header .btn {
 @media (max-width: 991.98px) {
   .wrapper-blockquote {
     padding-top: 3rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   .wrapper-blockquote blockquote {
     max-width: 550px;
@@ -13259,7 +13327,8 @@ header .btn {
 }
 
 .wrapper-card {
-  /*padding-bottom: 260px;*/
+  padding-top: 232px;
+  margin-bottom: 150px;
 }
 
 .wrapper-card .classes-title {
@@ -13308,6 +13377,7 @@ header .btn {
 @media (max-width: 1199.98px) {
   .wrapper-card {
     padding-top: 6rem;
+    margin-bottom: 3rem;
     /*padding-bottom: 6rem;*/
   }
   .wrapper-card .classes-title p {
@@ -13396,9 +13466,14 @@ header .btn {
   }
 }
 
+.wrapper-prising {
+  position: relative;
+  background-color: #fff;
+}
+
 .wrapper-prising h3 {
   margin-bottom: 65px;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 .wrapper-prising table span {
@@ -13458,7 +13533,7 @@ header .btn {
 }
 
 .wrapper-prising .bg-white {
-  background-color: #fff;
+  background-color: #f4f1fa;
 }
 
 .wrapper-prising .bg-int {
@@ -13498,7 +13573,7 @@ header .btn {
 @media (max-width: 991.98px) {
   .wrapper-prising h3 {
     margin-bottom: 3rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
   .wrapper-prising th {
     font-size: 1.075rem;
@@ -13527,11 +13602,11 @@ header .btn {
   padding-top: 100px;
   padding-bottom: 70px;
   position: relative;
+  background-color: #fff;
 }
 
-.wrapper-form:after {
-  content: '';
-  background: url("../images/map.jpg") center center/cover;
+.wrapper-form .map-form {
+  background: url("../images/map.jpg") center center/contain;
   position: absolute;
   height: 505px;
   width: 453px;
@@ -13631,16 +13706,11 @@ header .btn {
 
 @media (max-width: 1199.98px) {
   .wrapper-form {
-    padding-bottom: 400px;
+    padding-bottom: 450px;
   }
-  .wrapper-form:after {
-    content: '';
-    background: url("../images/map.jpg") center center/cover;
-    position: absolute;
-    height: 380px;
+  .wrapper-form .map-form {
+    height: 430px;
     width: 100%;
-    right: 0;
-    bottom: 0;
   }
   .col-md-7 {
     -webkit-box-flex: 0;
@@ -13658,7 +13728,7 @@ header .btn {
 
 @media (max-width: 991.98px) {
   .wrapper-form {
-    padding-bottom: 330px;
+    padding-bottom: 370px;
   }
   .wrapper-form .col-12 {
     -webkit-box-flex: 0;
@@ -13666,14 +13736,9 @@ header .btn {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .wrapper-form:after {
-    content: '';
-    background: url("../images/map.jpg") center center/cover;
+  .wrapper-form .map-form {
     position: absolute;
-    height: 305px;
-    width: 100%;
-    right: 0;
-    bottom: 0;
+    height: 350px;
   }
   .wrapper-form h6 {
     text-align: center;

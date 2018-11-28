@@ -48,3 +48,39 @@
 	    background-size: cover;
     }	
 }
+.blockquote-bottom {
+    @include media-breakpoint-down(lg) { 
+		bottom: -120px;
+    }
+    @include media-breakpoint-down(md) { 
+		bottom: -50px;
+    }
+	position: absolute;
+    bottom: -200px;
+    width: 100%;
+	img {
+		@include media-breakpoint-down(lg) { 
+			height: 120px;
+	    }
+	   @include media-breakpoint-down(md) { 
+			height: 50px;
+	    }
+		width: 100%;
+		height: 200px;
+	}
+}
+.pricing-top {
+    @include media-breakpoint-down(lg) { 
+		top: -34px;
+    }
+	position: absolute;
+    top: -74px;
+    width: 100%;
+	img {
+		@include media-breakpoint-down(lg) { 
+			height: 34px;
+	    }
+		width: 100%;
+		height: 74px;
+	}
+}
