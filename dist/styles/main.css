@@ -13533,7 +13533,7 @@ header .btn {
 }
 
 .wrapper-prising .bg-white {
-  background-color: #f4f1fa;
+  background-color: #f4f1fa !important;
 }
 
 .wrapper-prising .bg-int {
