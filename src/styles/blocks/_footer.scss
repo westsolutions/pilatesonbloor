@@ -31,13 +31,14 @@
 	}
 }
 
-@include media-breakpoint-down(md) { 
+@include media-breakpoint-down(lg) { 
 	.main-footer {
 		span, .social-link {
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
 		span {
+			text-align: center;
 			justify-content: center;
 			order: 2;
 		}

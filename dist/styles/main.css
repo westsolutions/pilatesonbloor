@@ -13781,12 +13781,13 @@ header .btn {
   color: #fff;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .main-footer span, .main-footer .social-link {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .main-footer span {
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
