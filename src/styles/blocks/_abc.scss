@@ -1,5 +1,9 @@
 .wrapper-exercises {
 	position: relative;
+	padding-bottom: 90px;
+	@include media-breakpoint-down(md) { 
+		padding-bottom: 40px;
+	}
 	.wrapper-img {
 		img {
 			max-width: 301px;

@@ -12707,6 +12707,11 @@ html, body {
   background-size: cover;
   flex-direction: column;
 }*/
+.wrapper-what-is {
+  padding-bottom: 90px;
+  padding-top: 70px;
+}
+
 @media (max-width: 1199.98px) {
   .wrapper-what-is {
     padding-top: 6rem;
@@ -12749,6 +12754,7 @@ html, body {
 
 .image-hero img {
   width: 100%;
+  max-height: 700px;
 }
 
 .image-our-team {
@@ -12989,7 +12995,7 @@ header .btn {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 300px 0 219px 0;
+  padding: 300px 0 149px 0;
 }
 
 @media (max-width: 1199.98px) {
@@ -13045,7 +13051,7 @@ header .btn {
 }
 
 .wrapper-our-team {
-  padding-top: 107px;
+  padding-top: 17px;
   position: relative;
 }
 
@@ -13237,6 +13243,7 @@ header .btn {
   /*overflow: hidden;*/
   background-color: #fff;
   position: relative;
+  margin-bottom: 115px;
 }
 
 .wrapper-blockquote blockquote {
@@ -13277,6 +13284,7 @@ header .btn {
 @media (max-width: 1199.98px) {
   .wrapper-blockquote {
     padding-top: 3rem;
+    margin-bottom: 3rem;
     /*overflow: hidden;*/
   }
   .wrapper-blockquote blockquote {
@@ -13327,7 +13335,7 @@ header .btn {
 }
 
 .wrapper-card {
-  padding-top: 232px;
+  padding-top: 115px;
   margin-bottom: 150px;
 }
 
@@ -13376,7 +13384,7 @@ header .btn {
 
 @media (max-width: 1199.98px) {
   .wrapper-card {
-    padding-top: 6rem;
+    padding-top: 3rem;
     margin-bottom: 3rem;
     /*padding-bottom: 6rem;*/
   }
@@ -13397,6 +13405,13 @@ header .btn {
 
 .wrapper-exercises {
   position: relative;
+  padding-bottom: 90px;
+}
+
+@media (max-width: 991.98px) {
+  .wrapper-exercises {
+    padding-bottom: 40px;
+  }
 }
 
 .wrapper-exercises .wrapper-img img {
@@ -13469,6 +13484,7 @@ header .btn {
 .wrapper-prising {
   position: relative;
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .wrapper-prising h3 {
@@ -13571,6 +13587,9 @@ header .btn {
 }
 
 @media (max-width: 991.98px) {
+  .wrapper-prising {
+    padding-bottom: 20px;
+  }
   .wrapper-prising h3 {
     margin-bottom: 3rem;
     padding-top: 3rem;
@@ -13599,7 +13618,7 @@ header .btn {
 }
 
 .wrapper-form {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 70px;
   position: relative;
   background-color: #fff;
@@ -13704,6 +13723,10 @@ header .btn {
   margin-top: 38px;
 }
 
+.wrapper-form .map-form {
+  width: 415px;
+}
+
 @media (max-width: 1199.98px) {
   .wrapper-form {
     padding-bottom: 450px;
@@ -13729,6 +13752,7 @@ header .btn {
 @media (max-width: 991.98px) {
   .wrapper-form {
     padding-bottom: 370px;
+    padding-top: 20px;
   }
   .wrapper-form .col-12 {
     -webkit-box-flex: 0;

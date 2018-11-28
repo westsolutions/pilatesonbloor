@@ -3,6 +3,7 @@
 	/*overflow: hidden;*/
 	background-color: #fff;
 	position: relative;
+	margin-bottom: 115px;
 	blockquote {
 		max-width: 1000px;
 		width: 100%;
@@ -38,6 +39,7 @@
 @include media-breakpoint-down(lg) { 
 	.wrapper-blockquote {
 		padding-top: 3rem;
+		margin-bottom: 3rem;
 		/*overflow: hidden;*/
 		blockquote {
 			max-width: 800px;

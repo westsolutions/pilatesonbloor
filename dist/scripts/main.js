@@ -10476,6 +10476,16 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
     });
 });
 
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.navbar-nav').on('click', ' a[href^="#"]', function (event) {
+    event.preventDefault();
+    // var headerHeight = $('header').outerHeight();
+    var headerHeight = 100;
+
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('html, body').animate({
+        scrollTop: __WEBPACK_IMPORTED_MODULE_0_jquery___default()(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a.attr(this, 'href')).offset().top - headerHeight
+    }, 1000);
+});
+
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {

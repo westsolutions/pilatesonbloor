@@ -1,5 +1,5 @@
 .wrapper-form {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 70px;
 	position: relative;
 	background-color: #fff;
@@ -86,6 +86,13 @@
 		}
 	}
 }
+@include media-breakpoint-down(xl) { 
+	.wrapper-form {
+		.map-form {
+		    width: 415px;
+		}
+	}	
+}
 @include media-breakpoint-down(lg) { 
 	.wrapper-form {
 		padding-bottom: 450px;
@@ -110,6 +117,7 @@
 @include media-breakpoint-down(md) { 
 	.wrapper-form {
 		padding-bottom: 370px;
+		padding-top: 20px;
 		.col-12 {
 		    -webkit-box-flex: 0;
 		    -ms-flex: 0 0 100%;

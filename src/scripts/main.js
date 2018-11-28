@@ -23,3 +23,14 @@ $(document).ready(() => {
         $('body').toggleClass('disabled-scrolling');
     });
 });
+
+$('.navbar-nav').on('click', ' a[href^="#"]', function (event) {
+    event.preventDefault();
+    // var headerHeight = $('header').outerHeight();
+    var headerHeight = 100;
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - headerHeight
+    }, 1000);
+
+});
