@@ -15,6 +15,12 @@
 		margin-bottom: 1.2rem;
 	}
 	.wrap-contact {
+		a {
+			display: inherit;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		p {
 			padding-left: 23px;
 		}

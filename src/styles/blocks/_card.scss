@@ -1,5 +1,5 @@
 .wrapper-card {
-	padding-bottom: 260px;
+	/*padding-bottom: 260px;*/
 	.classes-title {
 		max-width: 969px;
 		width: 100%;
@@ -40,7 +40,7 @@
 @include media-breakpoint-down(lg) {
 	.wrapper-card {
 		padding-top: 6rem;
-		padding-bottom: 6rem;
+		/*padding-bottom: 6rem;*/
 		.classes-title {
 			p {
 				font-size: 1.075rem;
@@ -50,6 +50,8 @@
 			}
 		}
 		.card {
+			max-width: 350px;
+			margin: 0 auto;
 			.card-body {
 			    padding-top: 20px 15px 30px 15px;
 			}

@@ -38,9 +38,49 @@
 		padding-top: 3rem;
 		overflow: hidden;
 		blockquote {
+			max-width: 800px;
 			p {
 				line-height: 2.625rem;
 				font-size: 1.35rem;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(md) { 
+	.wrapper-blockquote {
+		padding-top: 3rem;
+		overflow: hidden;
+		blockquote {
+			max-width: 550px;
+			p {
+				line-height: 2.625rem;
+				font-size: 1.35rem;
+			}
+			&:before {
+				content: " ";
+				left: -75px;
+			}
+			&:after {
+				content: " ";
+	    		right: -75px;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(sm) { 
+	.wrapper-blockquote {
+		blockquote {
+			max-width: 450px;
+		}
+	}
+}
+@include media-breakpoint-down(xs) { 
+	.wrapper-blockquote {
+		blockquote {
+			max-width: 350px;
+			&:before, &:after {
+				content: " ";
+				display: none;
 			}
 		}
 	}

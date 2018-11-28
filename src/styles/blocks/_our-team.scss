@@ -15,6 +15,10 @@
 
 .wrapper-our-team {
 	padding-top: 107px;
+	position: relative;
+	.container {
+		position: relative;
+	}
 	.team-img {
 		position: relative;
 		max-height: 381px;

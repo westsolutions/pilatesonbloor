@@ -1,9 +1,7 @@
 <?php partial('head') ?>
 
 <body >
-	
 	<header class="wrapper-header">
-		<div class="bg-top"></div>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg d-flex justify-content-between">
 				<a class="navbar-brand" href="/"><img src="<?= asset('images/logo.svg') ?>" alt="PILATES on BLOOR"></a>
@@ -29,6 +27,7 @@
 	</header> 
 
 	<section class="wrapper-hero text-right ">
+		<div class="image-hero"><img src="<?= asset('images/image.svg') ?>" alt="Hero"></div>
 		<div class="container">
 			<div class="wrap-title-hero">
 				<div class="bg-hero"><img src="<?= asset('images/pilates.png') ?>" alt="PILATES"></div>
@@ -47,6 +46,7 @@
 	</section>
 	
 	<section class="wrapper-exercises text-center">
+		<div class="image-exercises"><<img src="<?= asset('images/image-exercises.svg') ?>" alt="PILATES"></div>
 		<div class="container">
 			<h4>Exercises are performed with an emphasis on these <strong><em>ABC</em></strong> precision techniques: </h4>
 			<div class="row">
@@ -74,6 +74,7 @@
 	</section>
 
 	<section class="wrapper-our-team" id="our-team">
+		<div class="image-our-team"><!--<img src="<?= asset('images/image-our-team.svg') ?>" alt="PILATES">--></div>
 		<div class="container">		
 			<div class="our-team-title text-center">
 				<h3>Our team</h3>
@@ -165,6 +166,7 @@
 
 	<section class="wrapper-prising">
 		<div class="container text-center">
+			<h3>Pricing</h3>
 			<div class="table-responsive">
 				<table class="table">
 					<thead>
@@ -178,7 +180,7 @@
 					</thead>
 					<tbody>
 					    <tr>
-					    	<th scope="row" rowspan="3" bgcolor="#FBF0DB" class="intro" style="background-image:url(<?= asset('images/intro.png') ?>)"></th>
+					    	<th scope="row" rowspan="3" bgcolor="#FBF0DB" class="intro" style="background-image:url(<?= asset('images/intro.svg') ?>)"></th>
 					    	<td class="border-r"><strong><em>Intro Session</em></strong><br/>$63</td>
 					    	<td class="border-r bg-white"><strong><em>Intro Session</em></strong><br/>$40</td>
 					    	<td class="border-r"><strong><em>Intro Session</em></strong><br/>$25</td>
@@ -197,7 +199,7 @@
 					    	<td class="border-r bg-white"><strong><em>Intro 60 Sessions</em></strong><br/>$108 <span>($18/ea.)</span></td>
 					    </tr>
 					    <tr>
-					    	<th scope="row" rowspan="4" bgcolor="#FBF0DB" class="regular" class="intro" style="background-image:url(<?= asset('images/regular.png') ?>)"></th>
+					    	<th scope="row" rowspan="4" bgcolor="#FBF0DB" class="regular" style="background-image:url(<?= asset('images/regular.svg') ?>)"></th>
 					    	<td class="border-r"><strong><em>1 Session</em></strong><br/>$90</td>
 					    	<td class="border-r bg-white"><strong><em>1 Session</em></strong><br/>$50</td>
 					    	<td class="border-r"><strong><em>1 Session</em></strong><br/>$35</td>
@@ -240,8 +242,8 @@
 						<ul>
 							<li><i class="fa fa-map-marker" aria-hidden="true"></i><p>664 Bloor St West , 2nd FL<br/>Toronto ON<br/>M6G 1L2</p></li>
 							<li class="add-pad"><p><strong><em>Located inside Thai<br/>Massage Toronto Studio</em></strong></p></li>
-							<li><i class="fa fa-phone" aria-hidden="true"></i><p>(416) 533 7419</p></li>
-							<li class="diffr-color"><i class="fa fa-envelope" aria-hidden="true"></i><p>info@pilatesonbloor.com</p></li>
+							<li><a href = "tel: (416) 533 7419"><i class="fa fa-phone" aria-hidden="true"></i><p>(416) 533 7419</p></a></li>
+							<li class="diffr-color"><a href = "mailto: info@pilatesonbloor.com"><i class="fa fa-envelope" aria-hidden="true"></i><p>info@pilatesonbloor.com</p></a></li>
 						</ul>
 					</div>
 				</div>

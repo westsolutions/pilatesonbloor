@@ -12557,15 +12557,6 @@ body {
   background-image: linear-gradient(-130deg, #F5FAFF 11%, #F4F1FA 100%);
 }
 
-.bg-top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-height: 700px;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -12584,9 +12575,10 @@ ul {
 }
 
 .btn-sm, .btn-group-sm > .btn {
+  border: none !important;
   padding: 11px 20px;
   font-size: 0.9375rem;
-  line-height: 0.9375rem;
+  line-height: 0.937rem;
   letter-spacing: 2.7px;
   font-weight: 500;
 }
@@ -12715,6 +12707,68 @@ html, body {
   background-size: cover;
   flex-direction: column;
 }*/
+@media (max-width: 1199.98px) {
+  .wrapper-what-is {
+    padding-top: 6rem;
+  }
+}
+
+.wrapper-what-is p {
+  color: #6e6e6e;
+  font-size: 1.375rem;
+  line-height: 2.5rem;
+  padding: 38px 40px;
+  border: 5px solid #fff;
+  margin-top: 67px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 991.98px) {
+  .wrapper-what-is p {
+    font-size: 1.275rem;
+    line-height: 2.2rem;
+    padding: 15px;
+  }
+}
+
+.wrapper-what-is p em {
+  color: #000;
+}
+
+.image-hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .image-hero {
+    top: 81px;
+  }
+}
+
+.image-hero img {
+  width: 100%;
+}
+
+.image-our-team {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  top: 0;
+}
+
+.image-our-team:after {
+  content: " ";
+  background: url("../images/image-our-team.svg") center center/cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
 header {
   border-top: 9px solid #862886;
   padding-top: 60px;
@@ -12736,6 +12790,14 @@ header .btn {
   display: flex;
 }
 
+.navbar-nav .nav-link {
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.67rem 1rem;
+}
+
 .navbar-nav .nav-link:hover {
   color: #a551a5;
 }
@@ -12751,14 +12813,16 @@ header .btn {
 .fa-bars {
   display: none;
   font-size: 1.5rem;
+  color: #862886;
 }
 
 .fa-times {
   position: absolute;
-  left: 30px;
-  top: 24px;
+  left: 10px;
+  top: 15px;
   font-size: 1.3rem;
   display: none;
+  color: #862886;
 }
 
 .navbar {
@@ -12804,7 +12868,7 @@ header .btn {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   header {
     padding-top: 0px;
     top: 0;
@@ -12830,6 +12894,7 @@ header .btn {
 
 .wrapper-hero {
   overflow: hidden;
+  position: relative;
   z-index: 101;
 }
 
@@ -12871,7 +12936,7 @@ header .btn {
 
 @media (max-width: 1199.98px) {
   .wrapper-hero {
-    margin-top: 85px;
+    padding-top: 85px;
   }
   .wrapper-hero h2 {
     padding-bottom: 30px;
@@ -12923,6 +12988,11 @@ header .btn {
 
 .wrapper-our-team {
   padding-top: 107px;
+  position: relative;
+}
+
+.wrapper-our-team .container {
+  position: relative;
 }
 
 .wrapper-our-team .team-img {
@@ -13141,14 +13211,55 @@ header .btn {
     padding-top: 3rem;
     overflow: hidden;
   }
+  .wrapper-blockquote blockquote {
+    max-width: 800px;
+  }
   .wrapper-blockquote blockquote p {
     line-height: 2.625rem;
     font-size: 1.35rem;
   }
 }
 
+@media (max-width: 991.98px) {
+  .wrapper-blockquote {
+    padding-top: 3rem;
+    overflow: hidden;
+  }
+  .wrapper-blockquote blockquote {
+    max-width: 550px;
+  }
+  .wrapper-blockquote blockquote p {
+    line-height: 2.625rem;
+    font-size: 1.35rem;
+  }
+  .wrapper-blockquote blockquote:before {
+    content: " ";
+    left: -75px;
+  }
+  .wrapper-blockquote blockquote:after {
+    content: " ";
+    right: -75px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapper-blockquote blockquote {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wrapper-blockquote blockquote {
+    max-width: 350px;
+  }
+  .wrapper-blockquote blockquote:before, .wrapper-blockquote blockquote:after {
+    content: " ";
+    display: none;
+  }
+}
+
 .wrapper-card {
-  padding-bottom: 260px;
+  /*padding-bottom: 260px;*/
 }
 
 .wrapper-card .classes-title {
@@ -13197,7 +13308,7 @@ header .btn {
 @media (max-width: 1199.98px) {
   .wrapper-card {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    /*padding-bottom: 6rem;*/
   }
   .wrapper-card .classes-title p {
     font-size: 1.075rem;
@@ -13205,40 +13316,20 @@ header .btn {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
   }
+  .wrapper-card .card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
   .wrapper-card .card .card-body {
     padding-top: 20px 15px 30px 15px;
   }
 }
 
-@media (max-width: 1199.98px) {
-  .wrapper-what-is {
-    padding-top: 6rem;
-  }
+.wrapper-exercises {
+  position: relative;
 }
 
-.wrapper-what-is p {
-  color: #6e6e6e;
-  font-size: 1.375rem;
-  line-height: 2.5rem;
-  padding: 38px 40px;
-  border: 5px solid #fff;
-  margin-top: 67px;
-  margin-bottom: 64px;
-}
-
-@media (max-width: 991.98px) {
-  .wrapper-what-is p {
-    font-size: 1.275rem;
-    line-height: 2.2rem;
-    padding: 15px;
-  }
-}
-
-.wrapper-what-is p em {
-  color: #000;
-}
-
-.wrapper-exercises img {
+.wrapper-exercises .wrapper-img img {
   max-width: 301px;
   max-height: 230px;
   width: 100%;
@@ -13246,9 +13337,25 @@ header .btn {
 }
 
 @media (max-width: 991.98px) {
-  .wrapper-exercises img {
+  .wrapper-exercises .wrapper-img img {
     max-width: 270px;
   }
+}
+
+.wrapper-exercises .image-exercises {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .wrapper-exercises .image-exercises {
+    top: 123px;
+  }
+}
+
+.wrapper-exercises .image-exercises img {
+  width: 100%;
 }
 
 .wrapper-exercises h4 {
@@ -13256,6 +13363,7 @@ header .btn {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 40px;
+  z-index: 10;
 }
 
 .wrapper-exercises .wrapper-img {
@@ -13292,6 +13400,11 @@ header .btn {
   .wrapper-exercises h4 {
     padding-bottom: 10px;
   }
+}
+
+.wrapper-prising h3 {
+  margin-bottom: 65px;
+  padding-top: 200px;
 }
 
 .wrapper-prising table span {
@@ -13370,8 +13483,8 @@ header .btn {
 .wrapper-prising .intro, .wrapper-prising .regular {
   background-repeat: no-repeat;
   border-bottom: 8.5px solid #862886 !important;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 35px;
+  padding-right: 35px;
   background-position: center;
 }
 
@@ -13389,6 +13502,10 @@ header .btn {
 }
 
 @media (max-width: 991.98px) {
+  .wrapper-prising h3 {
+    margin-bottom: 3rem;
+    padding-top: 6rem;
+  }
   .wrapper-prising th {
     font-size: 1.075rem;
     line-height: 1.475rem;
@@ -13430,6 +13547,14 @@ header .btn {
 
 .wrapper-form h6 {
   margin-bottom: 1.2rem;
+}
+
+.wrapper-form .wrap-contact a {
+  display: inherit;
+}
+
+.wrapper-form .wrap-contact a:hover {
+  text-decoration: none;
 }
 
 .wrapper-form .wrap-contact p {
